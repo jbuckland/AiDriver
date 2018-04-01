@@ -13,23 +13,39 @@ public class SimpleCarDriver : MonoBehaviour
     public Text speedText;
     public Text turnText;
 
+    private bool enabled = true;
+
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        var rotation = maxTurn * horizontalInput * Time.deltaTime;
-        if (rotation > 0f)
+        if (enabled)
         {
-            Debug.Log("rotating " + rotation);
+            float horizontalInput = Input.GetAxis("Horizontal");
+            float verticalInput = Input.GetAxis("Vertical");
+
+            var rotation = maxTurn * horizontalInput * Time.deltaTime;
+            if (rotation > 0f)
+            {
+                Debug.Log("rotating " + rotation);
+            }
+            transform.Rotate(new Vector3(0, rotation, 0));
+            turnText.text = (horizontalInput * 100).ToString("0");
+
+
+            var moveForce = new Vector3(0, 0, maxSpeed * verticalInput * Time.deltaTime);
+            carBody.AddRelativeForce(moveForce, ForceMode.VelocityChange);
+            speedText.text = (verticalInput * 100).ToString("0");
         }
-        transform.Rotate(new Vector3(0, rotation, 0));
-        turnText.text = (horizontalInput * 100).ToString("0");
 
-
-        var moveForce = new Vector3(0, 0, maxSpeed * verticalInput * Time.deltaTime);
-        carBody.AddRelativeForce(moveForce, ForceMode.VelocityChange);
-        speedText.text = (verticalInput * 100).ToString("0");
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.collider.tag == "Wall")
+        {
+            enabled = false;
+        }
+    }
+
 }
