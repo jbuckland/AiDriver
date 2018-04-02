@@ -1,20 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SimpleCarDriver : MonoBehaviour
 {
 
+    //see this article for more ideas
+    //https://www.codeproject.com/Articles/1220644/ReInventing-Neural-Networks-Part
+
+
     public float maxTurn;
     public float maxSpeed;
     public Rigidbody carBody;
+    public GameController controller;
 
-    public Text speedText;
-    public Text turnText;
+
 
     private bool drivingEnabled = true;
-    private List<int> passedCheckPoints = new List<int>();
+    private List<int> touchedCheckPoints = new List<int>();
+    private float score = 0f;
+    private const int POINTS_PER_CHECKPOINT = 1;
+
+
 
     // Update is called once per frame
     void Update()
@@ -25,17 +31,14 @@ public class SimpleCarDriver : MonoBehaviour
             float verticalInput = Input.GetAxis("Vertical");
 
             var rotation = maxTurn * horizontalInput * Time.deltaTime;
-            if (rotation > 0f)
-            {
-                Debug.Log("rotating " + rotation);
-            }
             transform.Rotate(new Vector3(0, rotation, 0));
-            turnText.text = (horizontalInput * 100).ToString("0");
+            controller.SetTurnInput(horizontalInput);
 
 
             var moveForce = new Vector3(0, 0, maxSpeed * verticalInput * Time.deltaTime);
             carBody.AddRelativeForce(moveForce, ForceMode.VelocityChange);
-            speedText.text = (verticalInput * 100).ToString("0");
+            controller.SetSpeedInput(verticalInput);
+
         }
 
     }
@@ -45,35 +48,65 @@ public class SimpleCarDriver : MonoBehaviour
 
         if (collision.collider.tag == "Wall")
         {
-            drivingEnabled = false;
+            //drivingEnabled = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "CheckPoint")
+        if (other.tag == "Checkpoint")
         {
+
             var checkPoint = other.gameObject.GetComponent<CheckPoint>();
             var id = checkPoint.CheckPointId;
-            if (!passedCheckPoints.Contains(id))
-            {
-                passedCheckPoints.Add(id);
-            }
+            Debug.Log("We hit checkpoint " + id);
 
+            //if we have touched all other checkpoints, and we're now touching the start
+            //reset checkpoints touched, and add start line.
+            if (id == GameController.START_CHECKPOINT_ID && touchedCheckPoints.Count == GameController.CHECKPOINT_COUNT)
+            {
+                touchedCheckPoints.Clear(); ;
+                ScoreCheckPoint(id);
+            }
+            //if we haven't touched this checkpoint yet, record that we've touched it
+            else if (!touchedCheckPoints.Contains(id))
+            {
+                ScoreCheckPoint(id);
+            }
         }
     }
 
-
-    private void CalculateScore()
+    private void ScoreCheckPoint(int id)
     {
+        touchedCheckPoints.Add(id);
+        score += POINTS_PER_CHECKPOINT;
+        Debug.Log("score increased to " + score);
+    }
+
+
+    public float GetScore()
+    {
+        return score;
         //ideas:
 
-        //go towards the next checkpoint, quickly.
-        //get far away from the last checkpoint, quickly.
-        //touch each checkpoint once, quickly. reset when all are touched
+        //get to the next checkpoint, quickly.
+        //can easily do a running score: just cumulative time, lower is better
 
-        
+
+
+        //get far away from the last checkpoint, quickly.
+
+
+
+        //touch each checkpoint once, quickly. reset when all are touched
+        //score = #checkpointsTouched
+
+
     }
+
+
+
+    //kill the car is it's score doesn't get better for a fixed number of seconds
 
 
 }

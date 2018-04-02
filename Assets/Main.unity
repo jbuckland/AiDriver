@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 24330181}
   m_LocalRotation: {x: 0.18608403, y: -0, z: -0, w: 0.9825339}
-  m_LocalPosition: {x: -0.8000022, y: 3.070001, z: -7.286001}
+  m_LocalPosition: {x: 0, y: 3.070001, z: -7.286001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 825538570}
@@ -455,7 +455,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 12
 --- !u!1 &47315120
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47315121}
   m_Layer: 0
-  m_Name: InnterWalls
+  m_Name: InnerWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,6 +635,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -705,7 +710,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -764,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 14
 --- !u!1001 &95939903
 Prefab:
   m_ObjectHideFlags: 0
@@ -828,6 +833,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -1214,7 +1224,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -1265,7 +1275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 13
 --- !u!1001 &267735492
 Prefab:
   m_ObjectHideFlags: 0
@@ -1329,6 +1339,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -1476,6 +1491,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -1552,6 +1572,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -1624,6 +1649,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -1694,7 +1724,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -1745,7 +1775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 6
 --- !u!1001 &488794308
 Prefab:
   m_ObjectHideFlags: 0
@@ -1808,7 +1838,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -1867,7 +1897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 16
 --- !u!1 &510044748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,6 +2046,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -2088,6 +2123,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -2158,7 +2198,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -2217,7 +2257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 17
 --- !u!1 &577111908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,7 +2291,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!23 &577111910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2382,6 +2422,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -2453,6 +2498,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -2589,7 +2639,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -2640,7 +2690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 7
 --- !u!1001 &661176938
 Prefab:
   m_ObjectHideFlags: 0
@@ -2703,7 +2753,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -2754,7 +2804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 9
 --- !u!1 &664637356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,7 +2929,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -2930,7 +2980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 10
 --- !u!1001 &726537923
 Prefab:
   m_ObjectHideFlags: 0
@@ -2994,6 +3044,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -3067,6 +3122,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -3108,7 +3168,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!23 &767955169
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3237,7 +3297,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -3353,6 +3413,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -3385,7 +3450,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825538569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -105, y: 43.9, z: -81.3}
+  m_LocalPosition: {x: -105, y: 43.9, z: -82.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 24330182}
@@ -3407,8 +3472,7 @@ MonoBehaviour:
   maxTurn: 100
   maxSpeed: 200
   carBody: {fileID: 825538572}
-  speedText: {fileID: 284994056}
-  turnText: {fileID: 1176145725}
+  controller: {fileID: 2143307077}
 --- !u!54 &825538572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3488,6 +3552,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -3559,6 +3628,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -3716,6 +3790,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -3787,6 +3866,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -3939,7 +4023,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -3990,7 +4074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 4
 --- !u!1001 &939018565
 Prefab:
   m_ObjectHideFlags: 0
@@ -4067,6 +4151,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -4138,6 +4227,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -4245,6 +4339,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -4378,6 +4477,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1071134688}
+  - component: {fileID: 1071134689}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -4399,6 +4499,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071134689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071134687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2217e9feb4f884fa0921cc3d9489ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedText: {fileID: 284994056}
+  turnText: {fileID: 1176145725}
+  scoreText: {fileID: 1269669745}
 --- !u!1001 &1087375308
 Prefab:
   m_ObjectHideFlags: 0
@@ -4462,6 +4576,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -4629,7 +4748,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -4745,6 +4864,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -4816,6 +4940,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -4965,6 +5094,80 @@ Transform:
   m_Father: {fileID: 121075546}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1269669743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1269669744}
+  - component: {fileID: 1269669746}
+  - component: {fileID: 1269669745}
+  m_Layer: 5
+  m_Name: TextScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1269669744
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269669743}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1503190150}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 154.92001, y: -90.02997}
+  m_SizeDelta: {x: 103.28, y: 35.84}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1269669745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269669743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 999
+--- !u!222 &1269669746
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269669743}
 --- !u!1 &1273622932
 GameObject:
   m_ObjectHideFlags: 0
@@ -5173,6 +5376,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -5244,6 +5452,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -5317,6 +5530,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -5388,7 +5606,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1373859241
 Prefab:
@@ -5452,7 +5670,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -5503,7 +5721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 8
 --- !u!4 &1392941808 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4242368774506930, guid: 2b605a844bae303408563df39a16b0fa,
@@ -5576,7 +5794,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -5670,6 +5888,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -5709,6 +5932,8 @@ RectTransform:
   - {fileID: 284994055}
   - {fileID: 1540861504}
   - {fileID: 1176145724}
+  - {fileID: 1541072860}
+  - {fileID: 1269669744}
   m_Father: {fileID: 1240618894}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5939,6 +6164,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1540861503}
+--- !u!1 &1541072859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1541072860}
+  - component: {fileID: 1541072862}
+  - component: {fileID: 1541072861}
+  m_Layer: 5
+  m_Name: LabelScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1541072860
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541072859}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1503190150}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 51.64, y: -90.02994}
+  m_SizeDelta: {x: 103.28, y: 35.84}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1541072861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541072859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score:'
+--- !u!222 &1541072862
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541072859}
 --- !u!1 &1584933008
 GameObject:
   m_ObjectHideFlags: 0
@@ -6087,6 +6386,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -6157,7 +6461,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -6216,7 +6520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 15
 --- !u!1001 &1658730284
 Prefab:
   m_ObjectHideFlags: 0
@@ -6281,6 +6585,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -6322,7 +6631,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!23 &1696493837
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6568,6 +6877,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -6652,6 +6966,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -6723,6 +7042,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -6908,7 +7232,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -6959,7 +7283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 3
 --- !u!1001 &1972339518
 Prefab:
   m_ObjectHideFlags: 0
@@ -7023,6 +7347,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -7163,6 +7492,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -7228,7 +7562,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -7279,7 +7613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 11
 --- !u!1001 &2051030580
 Prefab:
   m_ObjectHideFlags: 0
@@ -7343,6 +7677,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -7415,6 +7754,11 @@ Prefab:
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
@@ -7603,6 +7947,11 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 54425076114396456, guid: 75ca0ec6d84513e4aac3ba223e878b98,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
   m_IsPrefabParent: 0
@@ -7673,7 +8022,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a75fe6ae2e9ca2248940c81b25bf1692, type: 2}
     - target: {fileID: 1388003409160534, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_TagString
-      value: Wall
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 4081942786921386, guid: 75ca0ec6d84513e4aac3ba223e878b98, type: 2}
       propertyPath: m_LocalScale.y
@@ -7724,7 +8073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1dae666c420043b707d78944f2287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckPointId: 2
+  CheckPointId: 5
 --- !u!1 &2122432648
 GameObject:
   m_ObjectHideFlags: 0
@@ -7809,3 +8158,45 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2122432648}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2143307076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2143307078}
+  - component: {fileID: 2143307077}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2143307077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143307076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938515f7a8bf8c9468a32ecba6c287fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1071134689}
+  currentCar: {fileID: 825538571}
+--- !u!4 &2143307078
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143307076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
