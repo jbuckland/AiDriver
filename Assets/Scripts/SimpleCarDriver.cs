@@ -13,12 +13,13 @@ public class SimpleCarDriver : MonoBehaviour
     public Text speedText;
     public Text turnText;
 
-    private bool enabled = true;
+    private bool drivingEnabled = true;
+    private List<int> passedCheckPoints = new List<int>();
 
     // Update is called once per frame
     void Update()
     {
-        if (enabled)
+        if (drivingEnabled)
         {
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
@@ -44,8 +45,35 @@ public class SimpleCarDriver : MonoBehaviour
 
         if (collision.collider.tag == "Wall")
         {
-            enabled = false;
+            drivingEnabled = false;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "CheckPoint")
+        {
+            var checkPoint = other.gameObject.GetComponent<CheckPoint>();
+            var id = checkPoint.CheckPointId;
+            if (!passedCheckPoints.Contains(id))
+            {
+                passedCheckPoints.Add(id);
+            }
+
+        }
+    }
+
+
+    private void CalculateScore()
+    {
+        //ideas:
+
+        //go towards the next checkpoint, quickly.
+        //get far away from the last checkpoint, quickly.
+        //touch each checkpoint once, quickly. reset when all are touched
+
+        
+    }
+
 
 }
