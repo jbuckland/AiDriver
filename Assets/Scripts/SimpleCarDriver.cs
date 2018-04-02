@@ -23,24 +23,69 @@ public class SimpleCarDriver : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (drivingEnabled)
         {
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
+            this.Move(horizontalInput, verticalInput);
 
-            var rotation = maxTurn * horizontalInput * Time.deltaTime;
-            transform.Rotate(new Vector3(0, rotation, 0));
-            controller.SetTurnInput(horizontalInput);
+            RaycastHit hitInfo;
+            Physics.queriesHitTriggers = false;
 
+            var forwardVector = transform.TransformVector(Vector3.forward);
+            var forwardLeftVector = transform.TransformVector(new Vector3(-1, 0, 1));
+            var forwardRightVector = transform.TransformVector(new Vector3(1, 0, 1));
+            var leftVector = transform.TransformVector(Vector3.left);
+            var rightVector = transform.TransformVector(Vector3.right);
 
-            var moveForce = new Vector3(0, 0, maxSpeed * verticalInput * Time.deltaTime);
-            carBody.AddRelativeForce(moveForce, ForceMode.VelocityChange);
-            controller.SetSpeedInput(verticalInput);
+            if (Physics.Raycast(transform.position, forwardVector, out hitInfo))
+            {
+                controller.setFrontDist(hitInfo.distance);
+                Debug.DrawLine(transform.position, hitInfo.point);
+            }
+
+            if (Physics.Raycast(transform.position, forwardLeftVector, out hitInfo))
+            {
+                controller.setFrontLeftDist(hitInfo.distance);
+                Debug.DrawLine(transform.position, hitInfo.point);
+            }
+
+            if (Physics.Raycast(transform.position, forwardRightVector, out hitInfo))
+            {
+                controller.setFrontRightDist(hitInfo.distance);
+                Debug.DrawLine(transform.position, hitInfo.point);
+            }
+
+            if (Physics.Raycast(transform.position, leftVector, out hitInfo))
+            {
+                controller.setLeftDist(hitInfo.distance);
+                Debug.DrawLine(transform.position, hitInfo.point);
+            }
+
+            if (Physics.Raycast(transform.position, rightVector, out hitInfo))
+            {
+                controller.setRightDist(hitInfo.distance);
+                Debug.DrawLine(transform.position, hitInfo.point);
+            }
+
 
         }
 
+    }
+
+
+    private void Move(float horizInput, float vertInput)
+    {
+        var rotation = maxTurn * horizInput * Time.deltaTime;
+        transform.Rotate(new Vector3(0, rotation, 0));
+        controller.SetTurnInput(horizInput);
+
+
+        var moveForce = new Vector3(0, 0, maxSpeed * vertInput * Time.deltaTime);
+        carBody.AddRelativeForce(moveForce, ForceMode.VelocityChange);
+        controller.SetSpeedInput(vertInput);
     }
 
     private void OnCollisionEnter(Collision collision)

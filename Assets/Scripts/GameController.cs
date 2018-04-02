@@ -34,4 +34,29 @@ public class GameController : MonoBehaviour
         ui.SetSpeedText((verticalInput * 100).ToString("0"));
 
     }
+
+    public void setFrontDist(float distance)
+    {
+        ui.SetFrontDistText((distance).ToString("0"));
+    }
+
+    public void setFrontLeftDist(float distance)
+    {
+        ui.SetFrontLeftDistText((distance).ToString("0"));
+    }
+
+    public void setFrontRightDist(float distance)
+    {
+        ui.SetFrontRightDistText((distance).ToString("0"));
+    }
+
+    public void setLeftDist(float distance)
+    {
+        ui.SetLeftDistText((distance).ToString("0"));
+    }
+
+    public void setRightDist(float distance)
+    {
+        ui.SetRightDistText((distance).ToString("0"));
+    }
 }
