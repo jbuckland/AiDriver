@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using ADBannerView = UnityEngine.iOS.ADBannerView;
 
 public class SimpleCarDriver : MonoBehaviour
 {
-
     //see this article for more ideas
     //https://www.codeproject.com/Articles/1220644/ReInventing-Neural-Networks-Part
 
@@ -12,14 +12,25 @@ public class SimpleCarDriver : MonoBehaviour
     public float maxSpeed;
     public Rigidbody carBody;
     public GameController controller;
-
-
+    public bool manualControl;
 
     private bool drivingEnabled = true;
     private List<int> touchedCheckPoints = new List<int>();
     private float score = 0f;
     private const int POINTS_PER_CHECKPOINT = 1;
 
+    private SimpleCarBrain brain;
+    private float frontDist;
+    private float frontLeftDist;
+    private float frontRightDist;
+    private float leftDist;
+    private float rightDist;
+    private float currentSpeed;
+
+    private void Start()
+    {
+        brain = new SimpleCarBrain();
+    }
 
 
     // Update is called once per frame
@@ -27,52 +38,91 @@ public class SimpleCarDriver : MonoBehaviour
     {
         if (drivingEnabled)
         {
-            float horizontalInput = Input.GetAxis("Horizontal");
-            float verticalInput = Input.GetAxis("Vertical");
-            this.Move(horizontalInput, verticalInput);
+            GetDistances();
 
-            RaycastHit hitInfo;
-            Physics.queriesHitTriggers = false;
 
-            var forwardVector = transform.TransformVector(Vector3.forward);
-            var forwardLeftVector = transform.TransformVector(new Vector3(-1, 0, 2));
-            var forwardRightVector = transform.TransformVector(new Vector3(1, 0, 2));
-            var leftVector = transform.TransformVector(new Vector3(-2, 0, 1));
-            var rightVector = transform.TransformVector(new Vector3(2, 0, 1));
+            float horizontalInput = 0;
+            float verticalInput = 0;
 
-            if (Physics.Raycast(transform.position, forwardVector, out hitInfo))
+            if (manualControl == true)
             {
-                controller.setFrontDist(hitInfo.distance);
-                Debug.DrawLine(transform.position, hitInfo.point);
+                horizontalInput = Input.GetAxis("Horizontal");
+                verticalInput = Input.GetAxis("Vertical");
             }
-
-            if (Physics.Raycast(transform.position, forwardLeftVector, out hitInfo))
+            else
             {
-                controller.setFrontLeftDist(hitInfo.distance);
-                Debug.DrawLine(transform.position, hitInfo.point);
-            }
+                brain.Evaluate((decimal) frontDist,
+                    (decimal) frontLeftDist,
+                    (decimal) frontRightDist,
+                    (decimal) leftDist,
+                    (decimal) rightDist,
+                    (decimal) currentSpeed);
 
-            if (Physics.Raycast(transform.position, forwardRightVector, out hitInfo))
-            {
-                controller.setFrontRightDist(hitInfo.distance);
-                Debug.DrawLine(transform.position, hitInfo.point);
-            }
-
-            if (Physics.Raycast(transform.position, leftVector, out hitInfo))
-            {
-                controller.setLeftDist(hitInfo.distance);
-                Debug.DrawLine(transform.position, hitInfo.point);
-            }
-
-            if (Physics.Raycast(transform.position, rightVector, out hitInfo))
-            {
-                controller.setRightDist(hitInfo.distance);
-                Debug.DrawLine(transform.position, hitInfo.point);
+                horizontalInput = (float) brain.Speed;
+                verticalInput = (float) brain.Turn;
             }
 
 
+            Move(horizontalInput, verticalInput);
+            SetDistances();
+        }
+    }
+
+    private void GetDistances()
+    {
+        RaycastHit hitInfo;
+        Physics.queriesHitTriggers = false;
+        frontDist = float.MaxValue;
+        frontLeftDist = float.MaxValue;
+        frontDist = float.MaxValue;
+        leftDist = float.MaxValue;
+        rightDist = float.MaxValue;
+
+
+        var forwardVector = transform.TransformVector(Vector3.forward);
+        var forwardLeftVector = transform.TransformVector(new Vector3(-1, 0, 2));
+        var forwardRightVector = transform.TransformVector(new Vector3(1, 0, 2));
+        var leftVector = transform.TransformVector(new Vector3(-2, 0, 1));
+        var rightVector = transform.TransformVector(new Vector3(2, 0, 1));
+
+        if (Physics.Raycast(transform.position, forwardVector, out hitInfo))
+        {
+            frontDist = hitInfo.distance;
+            Debug.DrawLine(transform.position, hitInfo.point);
         }
 
+        if (Physics.Raycast(transform.position, forwardLeftVector, out hitInfo))
+        {
+            frontLeftDist = hitInfo.distance;
+            Debug.DrawLine(transform.position, hitInfo.point);
+        }
+
+        if (Physics.Raycast(transform.position, forwardRightVector, out hitInfo))
+        {
+            frontRightDist = hitInfo.distance;
+            Debug.DrawLine(transform.position, hitInfo.point);
+        }
+
+        if (Physics.Raycast(transform.position, leftVector, out hitInfo))
+        {
+            leftDist = hitInfo.distance;
+            Debug.DrawLine(transform.position, hitInfo.point);
+        }
+
+        if (Physics.Raycast(transform.position, rightVector, out hitInfo))
+        {
+            rightDist = hitInfo.distance;
+            Debug.DrawLine(transform.position, hitInfo.point);
+        }
+    }
+
+    private void SetDistances()
+    {
+        controller.setFrontDist(frontDist);
+        controller.setFrontLeftDist(frontLeftDist);
+        controller.setFrontRightDist(frontRightDist);
+        controller.setLeftDist(leftDist);
+        controller.setRightDist(rightDist);
     }
 
 
@@ -85,15 +135,15 @@ public class SimpleCarDriver : MonoBehaviour
 
         var moveForce = new Vector3(0, 0, maxSpeed * vertInput * Time.deltaTime);
         carBody.AddRelativeForce(moveForce, ForceMode.VelocityChange);
+        currentSpeed = vertInput;
         controller.SetSpeedInput(vertInput);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-
         if (collision.collider.tag == "Wall")
         {
-            //drivingEnabled = false;
+            drivingEnabled = false;
         }
     }
 
@@ -101,7 +151,6 @@ public class SimpleCarDriver : MonoBehaviour
     {
         if (other.tag == "Checkpoint")
         {
-
             var checkPoint = other.gameObject.GetComponent<CheckPoint>();
             var id = checkPoint.CheckPointId;
             Debug.Log("We hit checkpoint " + id);
@@ -110,7 +159,8 @@ public class SimpleCarDriver : MonoBehaviour
             //reset checkpoints touched, and add start line.
             if (id == GameController.START_CHECKPOINT_ID && touchedCheckPoints.Count == GameController.CHECKPOINT_COUNT)
             {
-                touchedCheckPoints.Clear(); ;
+                touchedCheckPoints.Clear();
+                ;
                 ScoreCheckPoint(id);
             }
             //if we haven't touched this checkpoint yet, record that we've touched it
@@ -138,20 +188,13 @@ public class SimpleCarDriver : MonoBehaviour
         //can easily do a running score: just cumulative time, lower is better
 
 
-
         //get far away from the last checkpoint, quickly.
-
 
 
         //touch each checkpoint once, quickly. reset when all are touched
         //score = #checkpointsTouched
-
-
     }
 
 
-
     //kill the car is it's score doesn't get better for a fixed number of seconds
-
-
 }

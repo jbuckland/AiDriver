@@ -11,8 +11,6 @@ public class Neuron
 
 
     public List<Synapse> Inputs { get; set; }
-    private IInputFunction inputFunction;
-    private IOutputFunction outputFunction;
 
 
     public Neuron() : this(null, null)
@@ -70,7 +68,27 @@ public class Neuron
             }
         }
 
+        OutputValue = Normalize(OutputValue);
+
         return OutputValue.Value;
+    }
+
+    private decimal? Normalize(decimal? outputValue)
+    {
+        decimal? returnVal = null;
+        if (outputValue != null)
+        {
+            if (outputValue.Value < 0)
+            {
+                returnVal = 0;
+            }
+            else
+            {
+                returnVal = outputValue.Value;
+            }
+        }
+
+        return returnVal;
     }
 
     public void ClearOutput()

@@ -15,7 +15,6 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -26,37 +25,36 @@ public class GameController : MonoBehaviour
 
     public void SetTurnInput(float horizontalInput)
     {
-        ui.SetTurnText((horizontalInput * 100).ToString("0"));
+        ui.SetTurnText((horizontalInput * 100).ToString("F2"));
     }
 
     public void SetSpeedInput(float verticalInput)
     {
-        ui.SetSpeedText((verticalInput * 100).ToString("0"));
-
+        ui.SetSpeedText((verticalInput * 100).ToString("F2"));
     }
 
     public void setFrontDist(float distance)
     {
-        ui.SetFrontDistText((distance).ToString("0"));
+        ui.SetFrontDistText((distance).ToString("F2"));
     }
 
     public void setFrontLeftDist(float distance)
     {
-        ui.SetFrontLeftDistText((distance).ToString("0"));
+        ui.SetFrontLeftDistText((distance).ToString("F2"));
     }
 
     public void setFrontRightDist(float distance)
     {
-        ui.SetFrontRightDistText((distance).ToString("0"));
+        ui.SetFrontRightDistText((distance).ToString("F2"));
     }
 
     public void setLeftDist(float distance)
     {
-        ui.SetLeftDistText((distance).ToString("0"));
+        ui.SetLeftDistText((distance).ToString("F2"));
     }
 
     public void setRightDist(float distance)
     {
-        ui.SetRightDistText((distance).ToString("0"));
+        ui.SetRightDistText((distance).ToString("F2"));
     }
 }

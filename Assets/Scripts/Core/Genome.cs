@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 public class Genome
 {
@@ -11,6 +12,11 @@ public class Genome
 
 
     public Genome(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons, List<decimal> weights)
+    {
+        Init(numInputNeurons, numHiddenLayers, numNeuronsPerHiddenLayer, numOutputNeurons, weights);
+    }
+
+    private void Init(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons, List<decimal> weights)
     {
         NumInputNeurons = numInputNeurons;
         NumHiddenLayers = numHiddenLayers;
@@ -30,6 +36,24 @@ public class Genome
         }
     }
 
+    //make random weights
+    public Genome(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons)
+    {
+        var rand = new Random();
+        var weights = new List<decimal>();
+
+        var weightsNeeded = (numInputNeurons * numNeuronsPerHiddenLayer) + (Math.Pow(numNeuronsPerHiddenLayer, 2) * (numHiddenLayers - 1)) +
+                            numNeuronsPerHiddenLayer * numOutputNeurons;
+
+        for (int i = 0; i < weightsNeeded; i++)
+        {
+            var randomWeight = (decimal) ((rand.NextDouble() * 2) - 1);
+            weights.Add(randomWeight);
+        }
+
+        Init(numInputNeurons, numHiddenLayers, numNeuronsPerHiddenLayer, numOutputNeurons, weights);
+    }
+
 
     //display this networks genome
     public override string ToString()
@@ -40,39 +64,20 @@ public class Genome
         //3: number of outputs
         //4-n: weights
 
-        var genome = "";
+        var genome = "[";
 
-        genome += NumInputNeurons.ToString();
-        genome += NumHiddenLayers.ToString();
-        genome += NumNeuronsPerHiddenLayer.ToString();
-        genome += NumOutputNeurons.ToString();
+        genome += NumInputNeurons.ToString() + ",";
+        genome += NumHiddenLayers.ToString() + ",";
+        genome += NumNeuronsPerHiddenLayer.ToString() + ",";
+        genome += NumOutputNeurons.ToString() + "] [";
 
         foreach (var weight in Weights)
         {
-            genome += weight;
+            genome += weight.ToString("F3") + ", ";
         }
 
-/*
-        foreach (var layer in hiddenLayers)
-        {
-            foreach (var neuron in layer)
-            {
-                foreach (var synapse in neuron.Inputs)
-                {
-                    genome += synapse.Weight;
-                }
-            }
-        }
+        genome += "]";
 
-        foreach (var neuron in OutputNeurons)
-        {
-            foreach (var synapse in neuron.Inputs)
-            {
-                genome += synapse.Weight;
-            }
-        }
-
-*/
         return genome;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 public class NeuralNetwork
 {
@@ -79,6 +80,11 @@ public class NeuralNetwork
     public List<decimal> CalculateOutputs(List<decimal> inputValues)
     {
         var outputs = new List<decimal>();
+
+        if (inputValues.Count != InputNeurons.Count)
+        {
+            throw new Exception("not enough input values for all input neurons! Needed " + InputNeurons.Count + " but got " + inputValues.Count);
+        }
 
         //reset the values from all neurons
         for (int i = 0; i < InputNeurons.Count; i++)

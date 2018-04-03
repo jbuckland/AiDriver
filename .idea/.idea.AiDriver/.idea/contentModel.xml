@@ -19,17 +19,15 @@
           <e p="CheckPoint.cs" t="Include" />
           <e p="Core" t="Include">
             <e p="Genome.cs" t="Include" />
-            <e p="IInputFunction.cs" t="Include" />
-            <e p="IOutputFunction.cs" t="Include" />
             <e p="NeuralNetwork.cs" t="Include" />
             <e p="Neuron.cs" t="Include" />
+            <e p="SimpleCarBrain.cs" t="Include" />
             <e p="Synapse.cs" t="Include" />
             <e p="Tests" t="Include">
               <e p="GenomeTests.cs" t="Include" />
               <e p="NeuralNetworkTests.cs" t="Include" />
               <e p="NeuronTests.cs" t="Include" />
             </e>
-            <e p="WeightedInputFunction.cs" t="Include" />
           </e>
           <e p="GameController.cs" t="Include" />
           <e p="SimpleCarDriver.cs" t="Include" />
