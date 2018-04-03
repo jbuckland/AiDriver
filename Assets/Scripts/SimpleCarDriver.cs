@@ -35,10 +35,10 @@ public class SimpleCarDriver : MonoBehaviour
             Physics.queriesHitTriggers = false;
 
             var forwardVector = transform.TransformVector(Vector3.forward);
-            var forwardLeftVector = transform.TransformVector(new Vector3(-1, 0, 1));
-            var forwardRightVector = transform.TransformVector(new Vector3(1, 0, 1));
-            var leftVector = transform.TransformVector(Vector3.left);
-            var rightVector = transform.TransformVector(Vector3.right);
+            var forwardLeftVector = transform.TransformVector(new Vector3(-1, 0, 2));
+            var forwardRightVector = transform.TransformVector(new Vector3(1, 0, 2));
+            var leftVector = transform.TransformVector(new Vector3(-2, 0, 1));
+            var rightVector = transform.TransformVector(new Vector3(2, 0, 1));
 
             if (Physics.Raycast(transform.position, forwardVector, out hitInfo))
             {
