@@ -1,19 +1,19 @@
-﻿
-public class Synapse
+﻿public class Synapse
 {
-    private Neuron inputNeuron;
-    private Neuron outputNeuron;
+    public Neuron InputNeuron { get; set; }
 
-    public Synapse(Neuron inputNeuron, Neuron outputNeuron)
+    public Synapse(Neuron inputNeuron)
     {
-        this.inputNeuron = inputNeuron;
-        this.outputNeuron = outputNeuron;
+        InputNeuron = inputNeuron;
+        Weight = 1m;
     }
 
-    public decimal GetOutputValue()
+    public Synapse(Neuron inputNeuron, decimal weight)
     {
-        return outputNeuron.CalculateOutput();
+        InputNeuron = inputNeuron;
+        Weight = weight;
     }
 
-    public decimal Weight { get; internal set; }
+
+    public decimal Weight { get; private set; }
 }

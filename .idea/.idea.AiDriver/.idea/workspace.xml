@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1cb1777a-67ba-4e70-8c18-a32ff9a11288" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Neuron.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Neuron.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Synapse.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Synapse.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/WeightedInputFunction.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/WeightedInputFunction.cs" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="WeightedInputFunction.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WeightedInputFunction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+              <folding>
+                <marker date="1522770249700" expanded="true" signature="6:47" ph="..." />
+                <marker date="1522770249700" expanded="true" signature="100:586" ph="{...}" />
+                <marker date="1522770249700" expanded="true" signature="158:584" ph="{...}" />
+                <marker date="1522770249700" expanded="true" signature="195:553" ph="/* foreach (Synapse syn in inputs) ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Synapse.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Synapse.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+              <folding>
+                <marker date="1522773639097" expanded="true" signature="20:354" ph="{...}" />
+                <marker date="1522773639097" expanded="true" signature="106:174" ph="{...}" />
+                <marker date="1522773639097" expanded="true" signature="230:302" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Neuron.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Neuron.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="75" column="18" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+              <folding>
+                <marker date="1522779370381" expanded="true" signature="6:132" ph="..." />
+                <marker date="1522779370381" expanded="true" signature="153:1788" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="419:431" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="478:574" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="622:634" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="689:701" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="753:794" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="862:965" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="1083:1715" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="1122:1674" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="1207:1664" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="1270:1524" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="1545:1650" ph="{...}" />
+                <marker date="1522779370381" expanded="true" signature="1746:1786" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetwork.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/NeuralNetwork.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="751">
+              <caret line="108" column="5" lean-forward="false" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+              <folding>
+                <marker date="1522779390545" expanded="true" signature="61:3118" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="267:415" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="458:1262" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="551:626" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="780:1082" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="1425:1710" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="1498:1704" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="1828:2106" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="1888:2100" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="2172:2378" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="2256:2341" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="2448:3116" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="2595:2680" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="2725:2853" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="2777:2843" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="2900:2954" ph="{...}" />
+                <marker date="1522779390545" expanded="true" signature="3008:3085" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Genome.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Genome.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+              <folding>
+                <marker date="1522777945565" expanded="true" signature="6:47" ph="..." />
+                <marker date="1522777945565" expanded="true" signature="68:2203" ph="{...}" />
+                <marker date="1522777945565" expanded="true" signature="484:1136" ph="{...}" />
+                <marker date="1522777945565" expanded="true" signature="1006:1130" ph="{...}" />
+                <marker date="1522777945565" expanded="true" signature="1211:2201" ph="{...}" />
+                <marker date="1522777945565" expanded="true" signature="1226:1393" ph="/* 0: number of input neurons ... */" />
+                <marker date="1522777945565" expanded="true" signature="1655:1705" ph="{...}" />
+                <marker date="1522777945565" expanded="true" signature="1707:2172" ph="/* foreach (var layer in hiddenLayers) ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuronTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuronTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="70" />
+              <folding>
+                <marker date="1522773364366" expanded="true" signature="44:1675" ph="{...}" />
+                <marker date="1522773364366" expanded="true" signature="93:1673" ph="{...}" />
+                <marker date="1522773364366" expanded="true" signature="190:564" ph="{...}" />
+                <marker date="1522773364366" expanded="true" signature="654:1667" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetworkTests.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuralNetworkTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding>
+                <marker date="1522778988751" expanded="true" signature="6:75" ph="..." />
+                <marker date="1522778988751" expanded="true" signature="97:1128" ph="{...}" />
+                <marker date="1522778988751" expanded="true" signature="153:1126" ph="{...}" />
+                <marker date="1522778988751" expanded="true" signature="216:500" ph="{...}" />
+                <marker date="1522778988751" expanded="true" signature="557:1120" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Decimal.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DF586012-DB02-4BB9-9630-43343577C023/dd/68e5e376/Decimal.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="972" column="6" lean-forward="false" selection-start-line="972" selection-start-column="6" selection-end-line="972" selection-end-column="6" />
+              <folding>
+                <marker date="1522770341521" expanded="true" signature="0:279" ph="/* Decompiled with JetBrains decompiler ... */" />
+                <marker date="1522770341521" expanded="false" signature="287:428" ph="..." />
+                <marker date="1522770341521" expanded="true" signature="446:75166" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="451:543" ph="///Represents a decimal number. ... " />
+                <marker date="1522770341521" expanded="true" signature="690:75164" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="749:900" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="906:1003" ph="///Represents the number zero (0). ... " />
+                <marker date="1522770341521" expanded="true" signature="1056:1152" ph="///Represents the number one (1). ... " />
+                <marker date="1522770341521" expanded="true" signature="1204:1310" ph="///Represents the number negative one (-1). ... " />
+                <marker date="1522770341521" expanded="true" signature="1368:1545" ph="///Represents the largest possible value of &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. This field is constant and read-only ... " />
+                <marker date="1522770341521" expanded="true" signature="1628:1806" ph="///Represents the smallest possible value of &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. This field is constant and read-onl ... " />
+                <marker date="1522770341521" expanded="true" signature="2143:2378" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 32-bit signed inte ... " />
+                <marker date="1522770341521" expanded="true" signature="2408:2645" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="2457:2497" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="2508:2579" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="2651:2888" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 32-bit unsigned in ... " />
+                <marker date="1522770341521" expanded="true" signature="2945:3047" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="3053:3288" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 64-bit signed inte ... " />
+                <marker date="1522770341521" expanded="true" signature="3319:3580" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="3370:3410" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="3421:3492" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="3586:3823" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 64-bit unsigned in ... " />
+                <marker date="1522770341521" expanded="true" signature="3881:4001" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="4007:4642" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified single-precision f ... " />
+                <marker date="1522770341521" expanded="true" signature="4737:5372" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified double-precision f ... " />
+                <marker date="1522770341521" expanded="true" signature="5500:5663" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="5669:6094" ph="///Converts the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value to the equivalent OLE Automation Currency value,  ... " />
+                <marker date="1522770341521" expanded="true" signature="6145:6206" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="6212:6614" ph="///Converts the specified 64-bit signed integer, which contains an OLE Automation Currency value, to the equivale ... " />
+                <marker date="1522770341521" expanded="true" signature="6664:6738" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="6744:7342" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a decimal value represented in binary and con ... " />
+                <marker date="1522770341521" expanded="true" signature="7373:7842" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="7487:7752" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="7590:7744" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="7848:8511" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; from parameters specifying the instance's consti ... " />
+                <marker date="1522770341521" expanded="true" signature="8584:8926" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="8983:9083" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="9127:9208" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="9214:9852" ph="///Adds two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="9906:10022" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="10163:10581" ph="///Returns the smallest integral value greater than or equal to the specified decimal number. ... " />
+                <marker date="1522770341521" expanded="true" signature="10626:10671" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="10677:11314" ph="///Compares two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="11503:12245" ph="///Compares this instance to a specified &lt;see cref=&quot;T:System.Object&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="12284:12512" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="12518:13084" ph="///Compares this instance to a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; object. ... " />
+                <marker date="1522770341521" expanded="true" signature="13124:13179" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="13185:13953" ph="///Divides two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="14010:14129" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="14273:14685" ph="///Returns a value indicating whether this instance and a specified &lt;see cref=&quot;T:System.Object&quot; /&gt; represent the  ... " />
+                <marker date="1522770341521" expanded="true" signature="14731:14851" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="14857:15264" ph="///Returns a value indicating whether this instance and a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; object repres ... " />
+                <marker date="1522770341521" expanded="true" signature="15302:15362" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="15368:15536" ph="///Returns the hash code for this instance. ... " />
+                <marker date="1522770341521" expanded="true" signature="15637:16074" ph="///Returns a value indicating whether two specified instances of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; represent the sa ... " />
+                <marker date="1522770341521" expanded="true" signature="16128:16183" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="16189:16730" ph="///Rounds a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; number to the closest integer toward negative infinity. ... " />
+                <marker date="1522770341521" expanded="true" signature="16773:16886" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="17016:17246" ph="///Converts the numeric value of this instance to its equivalent string representation. ... " />
+                <marker date="1522770341521" expanded="true" signature="17284:17382" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="17388:17881" ph="///Converts the numeric value of this instance to its equivalent string representation, using the specified forma ... " />
+                <marker date="1522770341521" expanded="true" signature="17923:18014" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="18020:18493" ph="///Converts the numeric value of this instance to its equivalent string representation using the specified cultur ... " />
+                <marker date="1522770341521" expanded="true" signature="18546:18654" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="18660:19363" ph="///Converts the numeric value of this instance to its equivalent string representation using the specified format ... " />
+                <marker date="1522770341521" expanded="true" signature="19431:19532" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="19538:20377" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent. ... " />
+                <marker date="1522770341521" expanded="true" signature="20419:20519" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="20525:21993" ph="///Converts the string representation of a number in a specified style to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equ ... " />
+                <marker date="1522770341521" expanded="true" signature="22055:22204" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="22210:23311" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent using the spe ... " />
+                <marker date="1522770341521" expanded="true" signature="23379:23489" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="23495:25207" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent using the spe ... " />
+                <marker date="1522770341521" expanded="true" signature="25295:25454" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="25460:26413" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent. A return val ... " />
+                <marker date="1522770341521" expanded="true" signature="26475:26590" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="26596:28349" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent using the spe ... " />
+                <marker date="1522770341521" expanded="true" signature="28457:28631" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="28637:29036" ph="///Converts the value of a specified instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to its equivalent binary represe ... " />
+                <marker date="1522770341521" expanded="true" signature="29079:29146" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="29207:29829" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="29883:30279" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="30361:30676" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="30755:31463" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="30807:30969" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="31014:31205" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="31249:31438" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="31543:32070" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="32199:32286" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="32415:32503" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="32509:33279" ph="///Computes the remainder after dividing two &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="33339:33936" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="33748:33911" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="33942:34587" ph="///Multiplies two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="34646:34767" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="34913:35318" ph="///Returns the result of multiplying the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value by negative one. ... " />
+                <marker date="1522770341521" expanded="true" signature="35362:35443" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="35449:35985" ph="///Rounds a decimal value to the nearest integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="36028:36074" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="36080:36749" ph="///Rounds a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value to a specified number of decimal places. ... " />
+                <marker date="1522770341521" expanded="true" signature="36806:36929" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="36935:37910" ph="///Rounds a decimal value to the nearest integer. A parameter specifies how to round the value if it is midway be ... " />
+                <marker date="1522770341521" expanded="true" signature="37976:38028" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="38034:39471" ph="///Rounds a decimal value to a specified precision. A parameter specifies how to round the value if it is midway  ... " />
+                <marker date="1522770341521" expanded="true" signature="39551:40256" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="39750:40250" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="40400:41042" ph="///Subtracts one specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value from another. ... " />
+                <marker date="1522770341521" expanded="true" signature="41101:41222" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="41368:41924" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 8-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="41969:42195" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="42201:42753" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 8-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="42826:43066" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="43072:43625" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 16-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="43672:43912" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="43964:44083" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="44219:44602" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent double-precision floatin ... " />
+                <marker date="1522770341521" expanded="true" signature="44816:45383" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 32-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="45424:45862" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="45535:45772" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="45592:45658" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="45671:45764" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="45868:46435" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 64-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="46477:46967" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="46574:46877" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="46685:46756" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="46769:46869" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="46973:47556" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 16-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="47631:47863" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="47869:48399" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 32-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="48468:48781" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="48579:48690" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="48787:49317" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 64-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="49387:49729" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="49484:49638" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="49735:50129" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent single-precision floatin ... " />
+                <marker date="1522770341521" expanded="true" signature="50236:50641" ph="///Returns the integral digits of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt;; any fractional digits are discar ... " />
+                <marker date="1522770341521" expanded="true" signature="50687:50803" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="50936:51253" ph="///Converts an 8-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="51309:51360" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="51366:51677" ph="///Converts an 8-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="51760:51811" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="51817:52129" ph="///Converts a 16-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="52186:52237" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="52243:52561" ph="///Converts a 16-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="52645:52696" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="52702:53002" ph="///Converts a Unicode character to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="53058:53109" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="53115:53427" ph="///Converts a 32-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="53482:53527" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="53533:53851" ph="///Converts a 32-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="53933:53978" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="53984:54296" ph="///Converts a 64-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="54352:54397" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="54403:54721" ph="///Converts a 64-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="54804:54849" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="54855:55601" ph="///Converts a single-precision floating-point number to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="55658:55703" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="55709:56455" ph="///Converts a double-precision floating-point number to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="56513:56558" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="56564:57108" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to an 8-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="57164:57212" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="57218:57760" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to an 8-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="57843:57892" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="57898:58432" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a Unicode character. ... " />
+                <marker date="1522770341521" expanded="true" signature="58488:58545" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="58551:59093" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 16-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="59150:59199" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="59205:59753" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 16-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="59837:59887" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="59893:60435" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 32-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="60490:60539" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="60545:61052" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 32-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="61134:61184" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="61190:61732" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 64-bit signed integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="61788:61837" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="61843:62350" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 64-bit unsigned integer. ... " />
+                <marker date="1522770341521" expanded="true" signature="62433:62483" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="62489:62856" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a single-precision floating-point number. ... " />
+                <marker date="1522770341521" expanded="true" signature="62913:62963" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="62969:63336" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a double-precision floating-point number. ... " />
+                <marker date="1522770341521" expanded="true" signature="63394:63444" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="63450:63774" ph="///Returns the value of the &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand (the sign of the operand is unchanged). ... " />
+                <marker date="1522770341521" expanded="true" signature="63822:63850" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="63856:64171" ph="///Negates the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand. ... " />
+                <marker date="1522770341521" expanded="true" signature="64219:64263" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="64269:64748" ph="///Increments the &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand by 1. ... " />
+                <marker date="1522770341521" expanded="true" signature="64797:64854" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="64860:65341" ph="///Decrements the &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand by one. ... " />
+                <marker date="1522770341521" expanded="true" signature="65390:65452" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="65458:66046" ph="///Adds two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="66107:66153" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="66159:66758" ph="///Subtracts two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="66819:66870" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="66876:67474" ph="///Multiplies two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="67535:67586" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="67592:68315" ph="///Divides two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="68376:68425" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="68431:69216" ph="///Returns the remainder resulting from dividing two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+                <marker date="1522770341521" expanded="true" signature="69277:69329" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="69335:69747" ph="///Returns a value indicating whether two instances of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; are equal. ... " />
+                <marker date="1522770341521" expanded="true" signature="69806:69861" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="69867:70287" ph="///Returns a value indicating whether two instances of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; are not equal. ... " />
+                <marker date="1522770341521" expanded="true" signature="70346:70401" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="70407:70866" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is less than another specified  ... " />
+                <marker date="1522770341521" expanded="true" signature="70924:70978" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="70984:71467" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is less than or equal to anothe ... " />
+                <marker date="1522770341521" expanded="true" signature="71526:71581" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="71587:72052" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is greater than another specifi ... " />
+                <marker date="1522770341521" expanded="true" signature="72110:72164" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="72170:72659" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is greater than or equal to ano ... " />
+                <marker date="1522770341521" expanded="true" signature="72718:72773" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="72779:73030" ph="///Returns the &lt;see cref=&quot;T:System.TypeCode&quot; /&gt; for value type &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+                <marker date="1522770341521" expanded="true" signature="73064:73107" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="73166:73216" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="73272:73526" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="73449:73517" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="73584:73632" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="73688:73735" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="73793:73841" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="73901:73950" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74006:74054" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74112:74161" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74218:74266" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74325:74374" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74433:74482" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74542:74591" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74653:74684" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74748:75006" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="74925:74997" ph="{...}" />
+                <marker date="1522770341521" expanded="true" signature="75075:75160" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuralNetworkTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Neuron.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/NeuralNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuronTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DF586012-DB02-4BB9-9630-43343577C023/dd/68e5e376/Decimal.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/WeightedInputFunction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Synapse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/GenomeTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DF586012-DB02-4BB9-9630-43343577C023/d1/b301837f/Nullable`1.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Genome.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/WeightedInputFunction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tests/FooTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuronTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Synapse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/NerualNetwork.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Genome.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tests/GenomeTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuralNetworkTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Neuron.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/NeuralNetwork.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2551" />
+    <option name="width" value="2578" />
+    <option name="height" value="1408" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AiDriver (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AiDriver (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AiDriver (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AiDriver (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.splitter.proportion" value="0.25369245" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Unity Debug.Attach to Unity Editor" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cb1777a-67ba-4e70-8c18-a32ff9a11288" name="Default" comment="" />
+      <created>1522768606882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522768606882</updated>
+      <workItem from="1522768608333" duration="133000" />
+      <workItem from="1522768893281" duration="10606000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10739000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2551" y="-9" width="2578" height="1408" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3257882" sideWeight="0.49680257" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.50319743" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20823342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.49840128" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuronTests.cs</url>
+          <line>47</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuronTests.cs" initialLine="47">
+            <startOffsets>
+              <startOffset value="1522" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1583" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuralNetworkTests.cs</url>
+          <line>28</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuralNetworkTests.cs" initialLine="28">
+            <startOffsets>
+              <startOffset value="870" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="927" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Unit Tests">
+        <watch expression="connection" />
+        <watch expression="Id" />
+        <watch expression="OutputValue" />
+        <watch expression="outputValues[0]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WeightedInputFunction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <marker date="1522770249700" expanded="true" signature="6:47" ph="..." />
+            <marker date="1522770249700" expanded="true" signature="100:586" ph="{...}" />
+            <marker date="1522770249700" expanded="true" signature="158:584" ph="{...}" />
+            <marker date="1522770249700" expanded="true" signature="195:553" ph="/* foreach (Synapse syn in inputs) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DF586012-DB02-4BB9-9630-43343577C023/d1/b301837f/Nullable`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DF586012-DB02-4BB9-9630-43343577C023/dd/68e5e376/Decimal.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="972" column="6" lean-forward="false" selection-start-line="972" selection-start-column="6" selection-end-line="972" selection-end-column="6" />
+          <folding>
+            <marker date="1522770341521" expanded="true" signature="0:279" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1522770341521" expanded="false" signature="287:428" ph="..." />
+            <marker date="1522770341521" expanded="true" signature="446:75166" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="451:543" ph="///Represents a decimal number. ... " />
+            <marker date="1522770341521" expanded="true" signature="690:75164" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="749:900" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="906:1003" ph="///Represents the number zero (0). ... " />
+            <marker date="1522770341521" expanded="true" signature="1056:1152" ph="///Represents the number one (1). ... " />
+            <marker date="1522770341521" expanded="true" signature="1204:1310" ph="///Represents the number negative one (-1). ... " />
+            <marker date="1522770341521" expanded="true" signature="1368:1545" ph="///Represents the largest possible value of &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. This field is constant and read-only ... " />
+            <marker date="1522770341521" expanded="true" signature="1628:1806" ph="///Represents the smallest possible value of &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. This field is constant and read-onl ... " />
+            <marker date="1522770341521" expanded="true" signature="2143:2378" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 32-bit signed inte ... " />
+            <marker date="1522770341521" expanded="true" signature="2408:2645" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="2457:2497" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="2508:2579" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="2651:2888" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 32-bit unsigned in ... " />
+            <marker date="1522770341521" expanded="true" signature="2945:3047" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="3053:3288" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 64-bit signed inte ... " />
+            <marker date="1522770341521" expanded="true" signature="3319:3580" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="3370:3410" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="3421:3492" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="3586:3823" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified 64-bit unsigned in ... " />
+            <marker date="1522770341521" expanded="true" signature="3881:4001" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="4007:4642" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified single-precision f ... " />
+            <marker date="1522770341521" expanded="true" signature="4737:5372" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the value of the specified double-precision f ... " />
+            <marker date="1522770341521" expanded="true" signature="5500:5663" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="5669:6094" ph="///Converts the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value to the equivalent OLE Automation Currency value,  ... " />
+            <marker date="1522770341521" expanded="true" signature="6145:6206" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="6212:6614" ph="///Converts the specified 64-bit signed integer, which contains an OLE Automation Currency value, to the equivale ... " />
+            <marker date="1522770341521" expanded="true" signature="6664:6738" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="6744:7342" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a decimal value represented in binary and con ... " />
+            <marker date="1522770341521" expanded="true" signature="7373:7842" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="7487:7752" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="7590:7744" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="7848:8511" ph="///Initializes a new instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; from parameters specifying the instance's consti ... " />
+            <marker date="1522770341521" expanded="true" signature="8584:8926" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="8983:9083" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="9127:9208" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="9214:9852" ph="///Adds two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="9906:10022" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="10163:10581" ph="///Returns the smallest integral value greater than or equal to the specified decimal number. ... " />
+            <marker date="1522770341521" expanded="true" signature="10626:10671" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="10677:11314" ph="///Compares two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="11503:12245" ph="///Compares this instance to a specified &lt;see cref=&quot;T:System.Object&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="12284:12512" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="12518:13084" ph="///Compares this instance to a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; object. ... " />
+            <marker date="1522770341521" expanded="true" signature="13124:13179" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="13185:13953" ph="///Divides two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="14010:14129" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="14273:14685" ph="///Returns a value indicating whether this instance and a specified &lt;see cref=&quot;T:System.Object&quot; /&gt; represent the  ... " />
+            <marker date="1522770341521" expanded="true" signature="14731:14851" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="14857:15264" ph="///Returns a value indicating whether this instance and a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; object repres ... " />
+            <marker date="1522770341521" expanded="true" signature="15302:15362" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="15368:15536" ph="///Returns the hash code for this instance. ... " />
+            <marker date="1522770341521" expanded="true" signature="15637:16074" ph="///Returns a value indicating whether two specified instances of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; represent the sa ... " />
+            <marker date="1522770341521" expanded="true" signature="16128:16183" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="16189:16730" ph="///Rounds a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; number to the closest integer toward negative infinity. ... " />
+            <marker date="1522770341521" expanded="true" signature="16773:16886" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="17016:17246" ph="///Converts the numeric value of this instance to its equivalent string representation. ... " />
+            <marker date="1522770341521" expanded="true" signature="17284:17382" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="17388:17881" ph="///Converts the numeric value of this instance to its equivalent string representation, using the specified forma ... " />
+            <marker date="1522770341521" expanded="true" signature="17923:18014" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="18020:18493" ph="///Converts the numeric value of this instance to its equivalent string representation using the specified cultur ... " />
+            <marker date="1522770341521" expanded="true" signature="18546:18654" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="18660:19363" ph="///Converts the numeric value of this instance to its equivalent string representation using the specified format ... " />
+            <marker date="1522770341521" expanded="true" signature="19431:19532" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="19538:20377" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent. ... " />
+            <marker date="1522770341521" expanded="true" signature="20419:20519" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="20525:21993" ph="///Converts the string representation of a number in a specified style to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equ ... " />
+            <marker date="1522770341521" expanded="true" signature="22055:22204" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="22210:23311" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent using the spe ... " />
+            <marker date="1522770341521" expanded="true" signature="23379:23489" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="23495:25207" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent using the spe ... " />
+            <marker date="1522770341521" expanded="true" signature="25295:25454" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="25460:26413" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent. A return val ... " />
+            <marker date="1522770341521" expanded="true" signature="26475:26590" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="26596:28349" ph="///Converts the string representation of a number to its &lt;see cref=&quot;T:System.Decimal&quot; /&gt; equivalent using the spe ... " />
+            <marker date="1522770341521" expanded="true" signature="28457:28631" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="28637:29036" ph="///Converts the value of a specified instance of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to its equivalent binary represe ... " />
+            <marker date="1522770341521" expanded="true" signature="29079:29146" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="29207:29829" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="29883:30279" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="30361:30676" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="30755:31463" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="30807:30969" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="31014:31205" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="31249:31438" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="31543:32070" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="32199:32286" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="32415:32503" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="32509:33279" ph="///Computes the remainder after dividing two &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="33339:33936" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="33748:33911" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="33942:34587" ph="///Multiplies two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="34646:34767" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="34913:35318" ph="///Returns the result of multiplying the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value by negative one. ... " />
+            <marker date="1522770341521" expanded="true" signature="35362:35443" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="35449:35985" ph="///Rounds a decimal value to the nearest integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="36028:36074" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="36080:36749" ph="///Rounds a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value to a specified number of decimal places. ... " />
+            <marker date="1522770341521" expanded="true" signature="36806:36929" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="36935:37910" ph="///Rounds a decimal value to the nearest integer. A parameter specifies how to round the value if it is midway be ... " />
+            <marker date="1522770341521" expanded="true" signature="37976:38028" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="38034:39471" ph="///Rounds a decimal value to a specified precision. A parameter specifies how to round the value if it is midway  ... " />
+            <marker date="1522770341521" expanded="true" signature="39551:40256" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="39750:40250" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="40400:41042" ph="///Subtracts one specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; value from another. ... " />
+            <marker date="1522770341521" expanded="true" signature="41101:41222" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="41368:41924" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 8-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="41969:42195" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="42201:42753" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 8-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="42826:43066" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="43072:43625" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 16-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="43672:43912" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="43964:44083" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="44219:44602" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent double-precision floatin ... " />
+            <marker date="1522770341521" expanded="true" signature="44816:45383" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 32-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="45424:45862" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="45535:45772" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="45592:45658" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="45671:45764" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="45868:46435" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 64-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="46477:46967" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="46574:46877" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="46685:46756" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="46769:46869" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="46973:47556" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 16-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="47631:47863" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="47869:48399" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 32-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="48468:48781" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="48579:48690" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="48787:49317" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent 64-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="49387:49729" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="49484:49638" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="49735:50129" ph="///Converts the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to the equivalent single-precision floatin ... " />
+            <marker date="1522770341521" expanded="true" signature="50236:50641" ph="///Returns the integral digits of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt;; any fractional digits are discar ... " />
+            <marker date="1522770341521" expanded="true" signature="50687:50803" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="50936:51253" ph="///Converts an 8-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="51309:51360" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="51366:51677" ph="///Converts an 8-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="51760:51811" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="51817:52129" ph="///Converts a 16-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="52186:52237" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="52243:52561" ph="///Converts a 16-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="52645:52696" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="52702:53002" ph="///Converts a Unicode character to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="53058:53109" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="53115:53427" ph="///Converts a 32-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="53482:53527" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="53533:53851" ph="///Converts a 32-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="53933:53978" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="53984:54296" ph="///Converts a 64-bit signed integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="54352:54397" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="54403:54721" ph="///Converts a 64-bit unsigned integer to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="54804:54849" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="54855:55601" ph="///Converts a single-precision floating-point number to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="55658:55703" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="55709:56455" ph="///Converts a double-precision floating-point number to a &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="56513:56558" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="56564:57108" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to an 8-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="57164:57212" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="57218:57760" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to an 8-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="57843:57892" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="57898:58432" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a Unicode character. ... " />
+            <marker date="1522770341521" expanded="true" signature="58488:58545" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="58551:59093" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 16-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="59150:59199" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="59205:59753" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 16-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="59837:59887" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="59893:60435" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 32-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="60490:60539" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="60545:61052" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 32-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="61134:61184" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="61190:61732" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 64-bit signed integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="61788:61837" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="61843:62350" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a 64-bit unsigned integer. ... " />
+            <marker date="1522770341521" expanded="true" signature="62433:62483" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="62489:62856" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a single-precision floating-point number. ... " />
+            <marker date="1522770341521" expanded="true" signature="62913:62963" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="62969:63336" ph="///Converts a &lt;see cref=&quot;T:System.Decimal&quot; /&gt; to a double-precision floating-point number. ... " />
+            <marker date="1522770341521" expanded="true" signature="63394:63444" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="63450:63774" ph="///Returns the value of the &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand (the sign of the operand is unchanged). ... " />
+            <marker date="1522770341521" expanded="true" signature="63822:63850" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="63856:64171" ph="///Negates the value of the specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand. ... " />
+            <marker date="1522770341521" expanded="true" signature="64219:64263" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="64269:64748" ph="///Increments the &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand by 1. ... " />
+            <marker date="1522770341521" expanded="true" signature="64797:64854" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="64860:65341" ph="///Decrements the &lt;see cref=&quot;T:System.Decimal&quot; /&gt; operand by one. ... " />
+            <marker date="1522770341521" expanded="true" signature="65390:65452" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="65458:66046" ph="///Adds two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="66107:66153" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="66159:66758" ph="///Subtracts two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="66819:66870" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="66876:67474" ph="///Multiplies two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="67535:67586" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="67592:68315" ph="///Divides two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="68376:68425" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="68431:69216" ph="///Returns the remainder resulting from dividing two specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; values. ... " />
+            <marker date="1522770341521" expanded="true" signature="69277:69329" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="69335:69747" ph="///Returns a value indicating whether two instances of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; are equal. ... " />
+            <marker date="1522770341521" expanded="true" signature="69806:69861" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="69867:70287" ph="///Returns a value indicating whether two instances of &lt;see cref=&quot;T:System.Decimal&quot; /&gt; are not equal. ... " />
+            <marker date="1522770341521" expanded="true" signature="70346:70401" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="70407:70866" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is less than another specified  ... " />
+            <marker date="1522770341521" expanded="true" signature="70924:70978" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="70984:71467" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is less than or equal to anothe ... " />
+            <marker date="1522770341521" expanded="true" signature="71526:71581" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="71587:72052" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is greater than another specifi ... " />
+            <marker date="1522770341521" expanded="true" signature="72110:72164" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="72170:72659" ph="///Returns a value indicating whether a specified &lt;see cref=&quot;T:System.Decimal&quot; /&gt; is greater than or equal to ano ... " />
+            <marker date="1522770341521" expanded="true" signature="72718:72773" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="72779:73030" ph="///Returns the &lt;see cref=&quot;T:System.TypeCode&quot; /&gt; for value type &lt;see cref=&quot;T:System.Decimal&quot; /&gt;. ... " />
+            <marker date="1522770341521" expanded="true" signature="73064:73107" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="73166:73216" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="73272:73526" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="73449:73517" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="73584:73632" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="73688:73735" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="73793:73841" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="73901:73950" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74006:74054" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74112:74161" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74218:74266" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74325:74374" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74433:74482" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74542:74591" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74653:74684" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74748:75006" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="74925:74997" ph="{...}" />
+            <marker date="1522770341521" expanded="true" signature="75075:75160" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Synapse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <marker date="1522773639097" expanded="true" signature="20:354" ph="{...}" />
+            <marker date="1522773639097" expanded="true" signature="106:174" ph="{...}" />
+            <marker date="1522773639097" expanded="true" signature="230:302" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/GenomeTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1522778114380" expanded="true" signature="6:70" ph="..." />
+            <marker date="1522778114380" expanded="true" signature="97:659" ph="{...}" />
+            <marker date="1522778114380" expanded="true" signature="173:385" ph="{...}" />
+            <marker date="1522778114380" expanded="true" signature="218:377" ph="{...}" />
+            <marker date="1522778114380" expanded="true" signature="445:657" ph="{...}" />
+            <marker date="1522778114380" expanded="true" signature="485:649" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Genome.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <folding>
+            <marker date="1522777945565" expanded="true" signature="6:47" ph="..." />
+            <marker date="1522777945565" expanded="true" signature="68:2203" ph="{...}" />
+            <marker date="1522777945565" expanded="true" signature="484:1136" ph="{...}" />
+            <marker date="1522777945565" expanded="true" signature="1006:1130" ph="{...}" />
+            <marker date="1522777945565" expanded="true" signature="1211:2201" ph="{...}" />
+            <marker date="1522777945565" expanded="true" signature="1226:1393" ph="/* 0: number of input neurons ... */" />
+            <marker date="1522777945565" expanded="true" signature="1655:1705" ph="{...}" />
+            <marker date="1522777945565" expanded="true" signature="1707:2172" ph="/* foreach (var layer in hiddenLayers) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuronTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="70" />
+          <folding>
+            <marker date="1522773364366" expanded="true" signature="44:1675" ph="{...}" />
+            <marker date="1522773364366" expanded="true" signature="93:1673" ph="{...}" />
+            <marker date="1522773364366" expanded="true" signature="190:564" ph="{...}" />
+            <marker date="1522773364366" expanded="true" signature="654:1667" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Neuron.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="75" column="18" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+          <folding>
+            <marker date="1522779370381" expanded="true" signature="6:132" ph="..." />
+            <marker date="1522779370381" expanded="true" signature="153:1788" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="419:431" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="478:574" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="622:634" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="689:701" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="753:794" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="862:965" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="1083:1715" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="1122:1674" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="1207:1664" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="1270:1524" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="1545:1650" ph="{...}" />
+            <marker date="1522779370381" expanded="true" signature="1746:1786" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/NeuralNetwork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="108" column="5" lean-forward="false" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+          <folding>
+            <marker date="1522779390545" expanded="true" signature="61:3118" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="267:415" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="458:1262" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="551:626" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="780:1082" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="1425:1710" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="1498:1704" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="1828:2106" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="1888:2100" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="2172:2378" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="2256:2341" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="2448:3116" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="2595:2680" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="2725:2853" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="2777:2843" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="2900:2954" ph="{...}" />
+            <marker date="1522779390545" expanded="true" signature="3008:3085" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Tests/NeuralNetworkTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <marker date="1522778988751" expanded="true" signature="6:75" ph="..." />
+            <marker date="1522778988751" expanded="true" signature="97:1128" ph="{...}" />
+            <marker date="1522778988751" expanded="true" signature="153:1126" ph="{...}" />
+            <marker date="1522778988751" expanded="true" signature="216:500" ph="{...}" />
+            <marker date="1522778988751" expanded="true" signature="557:1120" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
