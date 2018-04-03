@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using ADBannerView = UnityEngine.iOS.ADBannerView;
 
 public class SimpleCarDriver : MonoBehaviour
 {
