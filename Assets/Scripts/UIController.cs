@@ -14,17 +14,16 @@ public class UIController : MonoBehaviour
     public Text frontRightDistText;
     public Text leftDistText;
     public Text rightDistText;
+    public Text carIdText;
 
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void SetTurnText(string text)
@@ -65,5 +64,10 @@ public class UIController : MonoBehaviour
     public void SetRightDistText(string distText)
     {
         rightDistText.text = distText;
+    }
+
+    public void SetCarIdText(string carId)
+    {
+        carIdText.text = carId;
     }
 }

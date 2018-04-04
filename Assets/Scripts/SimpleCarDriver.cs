@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SimpleCarDriver : MonoBehaviour
@@ -11,7 +12,11 @@ public class SimpleCarDriver : MonoBehaviour
     public float maxSpeed;
     public Rigidbody carBody;
     public GameController controller;
-    public bool manualControl;
+    public bool manualControl = true;
+    public string id;
+
+    public bool IsAlive { get; private set; }
+
 
     private bool drivingEnabled = true;
     private List<int> touchedCheckPoints = new List<int>();
@@ -26,23 +31,25 @@ public class SimpleCarDriver : MonoBehaviour
     private float rightDist;
     private float currentSpeed;
 
+    private float KILL_TIME = 10;
+    private float timeSinceLastScore = 0;
+
     private void Start()
     {
+        id = Guid.NewGuid().ToString().Substring(0, 5);
         brain = new SimpleCarBrain();
+        IsAlive = true;
     }
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (drivingEnabled)
+        if (IsAlive)
         {
             GetDistances();
-
-
             float horizontalInput = 0;
             float verticalInput = 0;
-
             if (manualControl == true)
             {
                 horizontalInput = Input.GetAxis("Horizontal");
@@ -63,14 +70,22 @@ public class SimpleCarDriver : MonoBehaviour
 
 
             Move(horizontalInput, verticalInput);
-            SetDistances();
+            CheckForTimeoutKill(Time.deltaTime);
+        }
+    }
+
+    private void CheckForTimeoutKill(float deltaTime)
+    {
+        //kill the car if it's score doesn't get better for a fixed number of seconds
+        timeSinceLastScore += deltaTime;
+        if (timeSinceLastScore > KILL_TIME)
+        {
+            IsAlive = false;
         }
     }
 
     private void GetDistances()
     {
-        RaycastHit hitInfo;
-        Physics.queriesHitTriggers = false;
         frontDist = float.MaxValue;
         frontLeftDist = float.MaxValue;
         frontDist = float.MaxValue;
@@ -84,38 +99,26 @@ public class SimpleCarDriver : MonoBehaviour
         var leftVector = transform.TransformVector(new Vector3(-2, 0, 1));
         var rightVector = transform.TransformVector(new Vector3(2, 0, 1));
 
-        if (Physics.Raycast(transform.position, forwardVector, out hitInfo))
-        {
-            frontDist = hitInfo.distance;
-            Debug.DrawLine(transform.position, hitInfo.point);
-        }
+        CastRay(forwardVector, ref frontDist);
+        CastRay(forwardLeftVector, ref frontLeftDist);
+        CastRay(forwardRightVector, ref frontRightDist);
+        CastRay(leftVector, ref leftDist);
+        CastRay(rightVector, ref rightDist);
+    }
 
-        if (Physics.Raycast(transform.position, forwardLeftVector, out hitInfo))
-        {
-            frontLeftDist = hitInfo.distance;
-            Debug.DrawLine(transform.position, hitInfo.point);
-        }
 
-        if (Physics.Raycast(transform.position, forwardRightVector, out hitInfo))
+    private void CastRay(Vector3 directionVector, ref float distHolder)
+    {
+        RaycastHit hitInfo;
+        Physics.queriesHitTriggers = false;
+        if (Physics.Raycast(transform.position, directionVector, out hitInfo))
         {
-            frontRightDist = hitInfo.distance;
-            Debug.DrawLine(transform.position, hitInfo.point);
-        }
-
-        if (Physics.Raycast(transform.position, leftVector, out hitInfo))
-        {
-            leftDist = hitInfo.distance;
-            Debug.DrawLine(transform.position, hitInfo.point);
-        }
-
-        if (Physics.Raycast(transform.position, rightVector, out hitInfo))
-        {
-            rightDist = hitInfo.distance;
+            distHolder = hitInfo.distance;
             Debug.DrawLine(transform.position, hitInfo.point);
         }
     }
 
-    private void SetDistances()
+    public void SetDistances()
     {
         controller.setFrontDist(frontDist);
         controller.setFrontLeftDist(frontLeftDist);
@@ -131,7 +134,6 @@ public class SimpleCarDriver : MonoBehaviour
         transform.Rotate(new Vector3(0, rotation, 0));
         controller.SetTurnInput(horizInput);
 
-
         var moveForce = new Vector3(0, 0, maxSpeed * vertInput * Time.deltaTime);
         carBody.AddRelativeForce(moveForce, ForceMode.VelocityChange);
         currentSpeed = vertInput;
@@ -140,26 +142,25 @@ public class SimpleCarDriver : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Wall")
+        if (collision.collider.CompareTag("Wall"))
         {
-            drivingEnabled = false;
+            IsAlive = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Checkpoint")
+        if (other.CompareTag("Checkpoint"))
         {
             var checkPoint = other.gameObject.GetComponent<CheckPoint>();
             var id = checkPoint.CheckPointId;
-            Debug.Log("We hit checkpoint " + id);
+            //Debug.Log("We hit checkpoint " + id);
 
             //if we have touched all other checkpoints, and we're now touching the start
             //reset checkpoints touched, and add start line.
             if (id == GameController.START_CHECKPOINT_ID && touchedCheckPoints.Count == GameController.CHECKPOINT_COUNT)
             {
                 touchedCheckPoints.Clear();
-                ;
                 ScoreCheckPoint(id);
             }
             //if we haven't touched this checkpoint yet, record that we've touched it
@@ -174,9 +175,8 @@ public class SimpleCarDriver : MonoBehaviour
     {
         touchedCheckPoints.Add(id);
         score += POINTS_PER_CHECKPOINT;
-        Debug.Log("score increased to " + score);
+        timeSinceLastScore = 0;
     }
-
 
     public float GetScore()
     {
@@ -186,14 +186,9 @@ public class SimpleCarDriver : MonoBehaviour
         //get to the next checkpoint, quickly.
         //can easily do a running score: just cumulative time, lower is better
 
-
         //get far away from the last checkpoint, quickly.
-
 
         //touch each checkpoint once, quickly. reset when all are touched
         //score = #checkpointsTouched
     }
-
-
-    //kill the car is it's score doesn't get better for a fixed number of seconds
 }
