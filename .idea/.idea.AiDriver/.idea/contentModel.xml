@@ -18,8 +18,13 @@
           <e p="CarDriver.cs" t="Include" />
           <e p="CheckPoint.cs" t="Include" />
           <e p="Core" t="Include">
-            <e p="GenericAlgorithm" t="Include">
-              <e p="GaMain.cs" t="Include" />
+            <e p="GeneticAlgorithm" t="Include">
+              <e p="CrossOverSpawnFunction.cs" t="Include" />
+              <e p="GeneticAlgorithm.cs" t="Include" />
+              <e p="Individual.cs" t="Include" />
+              <e p="ISelectionFunction.cs" t="Include" />
+              <e p="ISpawnIndividualFunction.cs" t="Include" />
+              <e p="TournamentSelection.cs" t="Include" />
             </e>
             <e p="NeuralNetwork" t="Include">
               <e p="Genome.cs" t="Include" />
@@ -29,6 +34,7 @@
               <e p="Synapse.cs" t="Include" />
             </e>
             <e p="Tests" t="Include">
+              <e p="GeneticAlgorithmTests.cs" t="Include" />
               <e p="GenomeTests.cs" t="Include" />
               <e p="NeuralNetworkTests.cs" t="Include" />
               <e p="NeuronTests.cs" t="Include" />

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Core.GeneticAlgorithm;
 using UnityEngine.Experimental.Rendering;
 
 
@@ -9,72 +10,62 @@ public class GeneticAlgorithm
 {
     private Random rand;
     private ISelectionFunction selectionFunction;
+    private ISpawnIndividualFunction spawnFunction;
+    private double MUTATION_RATE = .1;
+    private double MAX_MUTATION_SEVERITY = .50;
 
-    public GeneticAlgorithm(ISelectionFunction selectionFunction)
+    public GeneticAlgorithm(ISelectionFunction selectionFunction, ISpawnIndividualFunction spawnFunction)
     {
         this.selectionFunction = selectionFunction;
+        this.spawnFunction = spawnFunction;
         rand = new Random();
     }
 
 
     public List<Individual> MakeNewGeneration(List<Individual> population, int numInNewPopulation)
     {
-        population.Sort((a, b) => a.Score.CompareTo(b.Score));
+        population.Sort((a, b) => a.Fitness.CompareTo(b.Fitness));
 
 
         var newPopulation = new List<Individual>();
 
         for (int i = 0; i < numInNewPopulation; i++)
         {
-            Individual father = new Individual();
-            Individual mother = new Individual();
             var parents = selectionFunction.Select(population);
             if (parents == null || parents.Count != 2)
             {
                 throw new Exception("parents were null, or not 2 of them!");
             }
 
-            var baby = Mate(parents[0], parents[1]);
+
+            var baby = spawnFunction.Spawn(parents);
+
+            //do mutation?
+            var doMutation = rand.NextDouble();
+            if (doMutation.CompareTo(MUTATION_RATE) < 0)
+            {
+                var mutationSeverity = rand.NextDouble() * MAX_MUTATION_SEVERITY;
+                Mutate(baby, mutationSeverity);
+            }
+
+
             newPopulation.Add(baby);
         }
 
         return newPopulation;
     }
 
-    public void SelectParents(List<Individual> population, Individual father, Individual mother)
+    private void Mutate(Individual individual, double mutationSeverity)
     {
-        var totalScore = 0m;
-        population.ForEach(i => { totalScore += i.Score; });
-        var randScore = (decimal) rand.NextDouble() * totalScore;
+        //for each weight, there is a mutationSeverity change that we generate a new random weight.
 
-        var currentScore = totalScore;
-        foreach (var individual in population)
+        for (int i = 0; i < individual.Genome.Weights.Count; i++)
         {
-            currentScore -= individual.Score;
-            if (randScore > currentScore)
+            var mutationRoll = rand.NextDouble();
+            if (mutationRoll.CompareTo(mutationSeverity) < 0)
             {
-                father = individual;
-                break;
+                individual.Genome.Weights[i] = Genome.GetRandomWeight();
             }
         }
-    }
-
-
-    public void TournamentSelection(List<Individual> population, Individual father, Individual mother)
-    {
-    }
-
-
-    public void RankSelection(List<Individual> population, Individual father, Individual mother)
-    {
-    }
-
-
-    public Individual Mate(Individual father, Individual mother)
-    {
-        var baby = new Individual();
-
-
-        return baby;
     }
 }

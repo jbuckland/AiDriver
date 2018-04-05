@@ -10,6 +10,12 @@ public class Genome
     public int NumOutputNeurons { get; private set; }
     public List<decimal> Weights { get; private set; }
 
+
+    public static decimal GetRandomWeight()
+    {
+        return (decimal) ((Genome.GetRand().NextDouble() * 2) - 1);
+    }
+
     private static Random rand;
 
     private static Random GetRand()
@@ -57,7 +63,7 @@ public class Genome
 
         for (int i = 0; i < weightsNeeded; i++)
         {
-            var randomWeight = (decimal) ((Genome.GetRand().NextDouble() * 2) - 1);
+            var randomWeight = GetRandomWeight();
             weights.Add(randomWeight);
         }
 
