@@ -40,6 +40,7 @@ public class GameController : MonoBehaviour
         if (carList.Count > 0)
         {
             currentCar = carList[0];
+            currentCar.manualControl = true;
         }
     }
 
@@ -68,7 +69,8 @@ public class GameController : MonoBehaviour
             ui.SetScoreText(currentCar.GetScore().ToString());
             ui.SetCarIdText(currentCar.id);
 
-            camera.transform.position = Vector3.Lerp(camera.transform.position, currentCar.carBody.position, Time.deltaTime * cameraSmoothing);
+            camera.transform.position = Vector3.Lerp(camera.transform.position, currentCar.carBody.position,
+                Time.deltaTime * cameraSmoothing);
         }
     }
 

@@ -78,7 +78,7 @@ public class SimpleCarDriver : MonoBehaviour
     {
         //kill the car if it's score doesn't get better for a fixed number of seconds
         timeSinceLastScore += deltaTime;
-        if (timeSinceLastScore > KILL_TIME)
+        if (manualControl == false && timeSinceLastScore > KILL_TIME)
         {
             IsAlive = false;
         }
