@@ -1,7 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class NeuralNetwork
+public interface INeuralNetwork
+{
+    List<Neuron> InputNeurons { get; set; }
+    List<Neuron> OutputNeurons { get; set; }
+    void LoadGenome(Genome genome);
+    List<decimal> CalculateOutputs(List<decimal> inputValues);
+}
+
+public class NeuralNetwork : INeuralNetwork
 {
     public List<Neuron> InputNeurons { get; set; }
     public List<Neuron> OutputNeurons { get; set; }

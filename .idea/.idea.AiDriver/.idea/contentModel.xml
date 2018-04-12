@@ -16,38 +16,45 @@
         <e p="Scripts" t="Include">
           <e p="CarDrive.cs" t="Include" />
           <e p="CarDriver.cs" t="Include" />
+          <e p="CarObject.cs" t="Include" />
           <e p="CheckPoint.cs" t="Include" />
           <e p="Core" t="Include">
+            <e p="Game" t="Include">
+              <e p="CarBrainController.cs" t="Include" />
+              <e p="CarSensorData.cs" t="Include" />
+              <e p="GameController.cs" t="Include" />
+            </e>
             <e p="GeneticAlgorithm" t="Include">
               <e p="CrossOverSpawnFunction.cs" t="Include" />
               <e p="GeneticAlgorithm.cs" t="Include" />
+              <e p="Genome.cs" t="Include" />
+              <e p="GenomeFactory.cs" t="Include" />
               <e p="Individual.cs" t="Include" />
               <e p="ISelectionFunction.cs" t="Include" />
               <e p="ISpawnIndividualFunction.cs" t="Include" />
               <e p="TournamentSelection.cs" t="Include" />
             </e>
             <e p="NeuralNetwork" t="Include">
-              <e p="Genome.cs" t="Include" />
               <e p="NeuralNetwork.cs" t="Include" />
               <e p="Neuron.cs" t="Include" />
-              <e p="SimpleCarBrain.cs" t="Include" />
               <e p="Synapse.cs" t="Include" />
             </e>
             <e p="Tests" t="Include">
+              <e p="GameControllerTests.cs" t="Include" />
               <e p="GeneticAlgorithmTests.cs" t="Include" />
               <e p="GenomeTests.cs" t="Include" />
               <e p="NeuralNetworkTests.cs" t="Include" />
               <e p="NeuronTests.cs" t="Include" />
             </e>
           </e>
-          <e p="GameController.cs" t="Include" />
-          <e p="SimpleCarDriver.cs" t="Include" />
-          <e p="UIController.cs" t="Include" />
+          <e p="MainGameObject.cs" t="Include" />
+          <e p="UIObject.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
       <e p="Temp" t="ExcludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
       </e>
