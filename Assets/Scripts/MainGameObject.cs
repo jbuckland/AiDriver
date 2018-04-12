@@ -29,8 +29,8 @@ public class MainGameObject : MonoBehaviour, IMainGameObject
     void Start()
     {
         var ga = new GeneticAlgorithm(new TournamentSelection(), new CrossOverSpawnFunction());
-        gameController = new GameController(ui, ga, this);
-        gameController.Init();
+        gameController = new GameController(new UnityDebug(), ui, ga, this);
+        gameController.Init(GameController.DEFAULT_NUM_CARS);
     }
 
     // Update is called once per frame

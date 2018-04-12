@@ -34,6 +34,9 @@
               <e p="ISpawnIndividualFunction.cs" t="Include" />
               <e p="TournamentSelection.cs" t="Include" />
             </e>
+            <e p="Interfaces" t="Include">
+              <e p="IDebug.cs" t="Include" />
+            </e>
             <e p="NeuralNetwork" t="Include">
               <e p="NeuralNetwork.cs" t="Include" />
               <e p="Neuron.cs" t="Include" />
@@ -49,6 +52,7 @@
           </e>
           <e p="MainGameObject.cs" t="Include" />
           <e p="UIObject.cs" t="Include" />
+          <e p="UnityDebug.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

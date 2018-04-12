@@ -3,34 +3,40 @@ using UnityEngine;
 
 public class GameController
 {
-    private int NUM_CARS = 50;
+    public const int DEFAULT_NUM_CARS = 50;
 
     private IUiObject uiObject;
     private IMainGameObject mainGameObject;
 
     private IGeneticAlgorithm ga;
-    
+
     private List<ICarBrainController> brainControllerList;
     private ICarBrainController currentBrainController;
 
     private bool running = true;
+    private int numberCars;
+    private IDebug debug;
 
-    public GameController(IUiObject uiObject, IGeneticAlgorithm ga, IMainGameObject mainGameObject)
+    public GameController(IDebug debug, IUiObject uiObject, IGeneticAlgorithm ga, IMainGameObject mainGameObject)
     {
+        this.debug = debug;
         this.uiObject = uiObject;
         this.ga = ga;
         this.mainGameObject = mainGameObject;
     }
 
-    public void Init()
+    public void Init(int numCars)
     {
+        this.numberCars = numCars;
         brainControllerList = new List<ICarBrainController>();
-        for (var i = 0; i < NUM_CARS; i++)
+
+        var brainControllers = new List<ICarBrainController>();
+        for (var i = 0; i < numberCars; i++)
         {
-            brainControllerList.Add(mainGameObject.CreateCarBrainController(null)); //make a brain with random weights
+            brainControllers.Add(mainGameObject.CreateCarBrainController(null)); //make a brain with random weights
         }
 
-        SetupGenerationOfBrains(brainControllerList);
+        SetupGenerationOfBrains(brainControllers);
     }
 
     public void Update(float deltaTime)
@@ -43,13 +49,13 @@ public class GameController
                 if (bestBrain.Id != currentBrainController.Id)
                 {
                     currentBrainController = bestBrain;
-                    Debug.Log("found a better car: " + currentBrainController.Id);
+                    debug.Log("found a better car: " + currentBrainController.Id);
                 }
             }
             else
             {
-                Debug.Log("All cars are dead!");
-                Debug.Log("Making a new generation!");
+                debug.Log("All cars are dead!");
+                debug.Log("Making a new generation!");
                 var newBrains = MakeNewGenerationOfBrains(brainControllerList);
                 SetupGenerationOfBrains(newBrains);
             }
@@ -57,6 +63,7 @@ public class GameController
             var sensorData = currentBrainController.GetSensorData();
             uiObject.SetSensorData(sensorData, "F2");
             uiObject.SetScoreText(currentBrainController.Score.ToString());
+            uiObject.SetTurnText(currentBrainController.TurnOutput.ToString());
             uiObject.SetCarIdText(currentBrainController.Id);
 
             mainGameObject.CameraFollowCar(currentBrainController.CarObjectId, deltaTime);
@@ -66,7 +73,6 @@ public class GameController
 
     private void SetupGenerationOfBrains(List<ICarBrainController> newBrains)
     {
-        brainControllerList = newBrains;
         foreach (var brain in brainControllerList)
         {
             mainGameObject.DestroyCarObject(brain.CarObjectId);
