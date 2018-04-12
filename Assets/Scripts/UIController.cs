@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIController : MonoBehaviour
+public class UIController : MonoBehaviour, IGameUI
 {
     public Text speedText;
     public Text turnText;
@@ -16,15 +16,6 @@ public class UIController : MonoBehaviour
     public Text rightDistText;
     public Text carIdText;
 
-    // Use this for initialization
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     public void SetTurnText(string text)
     {

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -17,22 +18,34 @@ public class GameController : MonoBehaviour
     public GameObject camera;
     public float cameraSmoothing = 5.0f;
 
+    private GameController2 controller;
+    
+    private List<GameObject> carObjects;
     private List<SimpleCarDriver> carList;
     private int NUM_CARS = 50;
     private bool running = true;
+    private GeneticAlgorithm ga;
+
 
     // Use this for initialization
     void Start()
     {
+        var ga = new GeneticAlgorithm(new TournamentSelection(), new CrossOverSpawnFunction());
+        controller = new GameController2(ui, ga);
+        
+        ////
         carList = new List<SimpleCarDriver>();
+        ga = new GeneticAlgorithm(new TournamentSelection(), new CrossOverSpawnFunction());
 
-
+        carObjects = new List<GameObject>();
         for (var i = 0; i < NUM_CARS; i++)
         {
             var carObject = Instantiate(simpleCarPrefab, startPoint.position, startPoint.rotation);
+            carObjects.Add(carObject);
             var carScript = carObject.GetComponent<SimpleCarDriver>();
             carScript.manualControl = false;
             carScript.controller = this;
+            carScript.brain = new SimpleCarBrain(); //make a brain with random weights
             carList.Add(carScript);
         }
 
@@ -40,7 +53,7 @@ public class GameController : MonoBehaviour
         if (carList.Count > 0)
         {
             currentCar = carList[0];
-            currentCar.manualControl = true;
+            //currentCar.manualControl = true;
         }
     }
 
@@ -61,7 +74,29 @@ public class GameController : MonoBehaviour
             else
             {
                 Debug.Log("All cars are dead!");
-                running = false;
+                Debug.Log("Making a new generation!");
+
+                var newBrains = MakeNewBrains(carList);
+                foreach (var gameObject in carObjects)
+                {
+                    Destroy(gameObject);
+                }
+
+                carObjects = new List<GameObject>();
+                carList = new List<SimpleCarDriver>();
+
+                foreach (var brain in newBrains)
+                {
+                    var carObject = Instantiate(simpleCarPrefab, startPoint.position, startPoint.rotation);
+                    carObjects.Add(carObject);
+                    var carScript = carObject.GetComponent<SimpleCarDriver>();
+                    carScript.manualControl = false;
+                    carScript.controller = this;
+                    carScript.brain = brain;
+                    carList.Add(carScript);
+                }
+
+                currentCar = carList[0];
             }
 
 
@@ -72,6 +107,30 @@ public class GameController : MonoBehaviour
             camera.transform.position = Vector3.Lerp(camera.transform.position, currentCar.carBody.position,
                 Time.deltaTime * cameraSmoothing);
         }
+    }
+
+    private List<SimpleCarBrain> MakeNewBrains(List<SimpleCarDriver> currentCars)
+    {
+        //convert from cars to individuals
+        var currentPopulation = new List<Individual>();
+        foreach (var car in currentCars)
+        {
+            var individual =
+                new Individual {Fitness = (decimal) car.GetScore(), Id = car.id, Genome = car.brain.Genome};
+            currentPopulation.Add(individual);
+        }
+
+        var newPopulation = ga.MakeNewGeneration(currentPopulation, currentPopulation.Count);
+
+        //convert back from individuals to cars
+        var newBrains = new List<SimpleCarBrain>();
+        foreach (var individual in newPopulation)
+        {
+            var brain = new SimpleCarBrain(individual.Genome.Weights);
+            newBrains.Add(brain);
+        }
+
+        return newBrains;
     }
 
 

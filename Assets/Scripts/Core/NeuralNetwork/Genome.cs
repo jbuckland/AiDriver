@@ -28,12 +28,32 @@ public class Genome
         return Genome.rand;
     }
 
-    public Genome(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons, List<decimal> weights)
+    public Genome(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons,
+        List<decimal> weights)
     {
         Init(numInputNeurons, numHiddenLayers, numNeuronsPerHiddenLayer, numOutputNeurons, weights);
     }
 
-    private void Init(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons, List<decimal> weights)
+    //make random weights
+    public Genome(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons)
+    {
+        var weights = new List<decimal>();
+
+        var weightsNeeded = (numInputNeurons * numNeuronsPerHiddenLayer) +
+                            (Math.Pow(numNeuronsPerHiddenLayer, 2) * (numHiddenLayers - 1)) +
+                            numNeuronsPerHiddenLayer * numOutputNeurons;
+
+        for (int i = 0; i < weightsNeeded; i++)
+        {
+            var randomWeight = GetRandomWeight();
+            weights.Add(randomWeight);
+        }
+
+        Init(numInputNeurons, numHiddenLayers, numNeuronsPerHiddenLayer, numOutputNeurons, weights);
+    }
+
+    private void Init(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons,
+        List<decimal> weights)
     {
         NumInputNeurons = numInputNeurons;
         NumHiddenLayers = numHiddenLayers;
@@ -44,30 +64,14 @@ public class Genome
 
         //verify number of weights
 
-        var weightsNeeded = (numInputNeurons * numNeuronsPerHiddenLayer) + (Math.Pow(numNeuronsPerHiddenLayer, 2) * (numHiddenLayers - 1)) +
+        var weightsNeeded = (numInputNeurons * numNeuronsPerHiddenLayer) +
+                            (Math.Pow(numNeuronsPerHiddenLayer, 2) * (numHiddenLayers - 1)) +
                             numNeuronsPerHiddenLayer * numOutputNeurons;
 
         if (weights.Count != weightsNeeded)
         {
             throw new Exception("needed " + weightsNeeded + " weights, but only got " + weights.Count);
         }
-    }
-
-    //make random weights
-    public Genome(int numInputNeurons, int numHiddenLayers, int numNeuronsPerHiddenLayer, int numOutputNeurons)
-    {
-        var weights = new List<decimal>();
-
-        var weightsNeeded = (numInputNeurons * numNeuronsPerHiddenLayer) + (Math.Pow(numNeuronsPerHiddenLayer, 2) * (numHiddenLayers - 1)) +
-                            numNeuronsPerHiddenLayer * numOutputNeurons;
-
-        for (int i = 0; i < weightsNeeded; i++)
-        {
-            var randomWeight = GetRandomWeight();
-            weights.Add(randomWeight);
-        }
-
-        Init(numInputNeurons, numHiddenLayers, numNeuronsPerHiddenLayer, numOutputNeurons, weights);
     }
 
 

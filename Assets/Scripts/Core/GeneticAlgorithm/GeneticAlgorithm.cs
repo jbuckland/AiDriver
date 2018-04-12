@@ -6,12 +6,14 @@ using Core.GeneticAlgorithm;
 using UnityEngine.Experimental.Rendering;
 
 
-public class GeneticAlgorithm
+
+
+public class GeneticAlgorithm : IGeneticAlgorithm
 {
     private Random rand;
     private ISelectionFunction selectionFunction;
     private ISpawnIndividualFunction spawnFunction;
-    private double MUTATION_RATE = .1;
+    private double MUTATION_RATE = .2;
     private double MAX_MUTATION_SEVERITY = .50;
 
     public GeneticAlgorithm(ISelectionFunction selectionFunction, ISpawnIndividualFunction spawnFunction)
@@ -55,7 +57,7 @@ public class GeneticAlgorithm
         return newPopulation;
     }
 
-    private void Mutate(Individual individual, double mutationSeverity)
+    public void Mutate(Individual individual, double mutationSeverity)
     {
         //for each weight, there is a mutationSeverity change that we generate a new random weight.
 

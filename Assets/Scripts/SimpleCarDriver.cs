@@ -23,7 +23,7 @@ public class SimpleCarDriver : MonoBehaviour
     private float score = 0f;
     private const int POINTS_PER_CHECKPOINT = 1;
 
-    private SimpleCarBrain brain;
+    public SimpleCarBrain brain;
     private float frontDist;
     private float frontLeftDist;
     private float frontRightDist;
@@ -34,13 +34,14 @@ public class SimpleCarDriver : MonoBehaviour
     private float KILL_TIME = 10;
     private float timeSinceLastScore = 0;
 
+
+
     private void Start()
     {
         id = Guid.NewGuid().ToString().Substring(0, 5);
-        brain = new SimpleCarBrain();
+
         IsAlive = true;
     }
-
 
     // Update is called once per frame
     void FixedUpdate()
